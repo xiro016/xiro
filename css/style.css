@@ -1,0 +1,165 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    object-fit: cover;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* header----------------------------------------------- */
+
+.header {
+    width: 100vw;
+    position: relative;
+}
+
+.box {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    margin-right: 250px;
+}
+
+.menu li {
+    margin-top: 10px;
+}
+
+.logo {
+    margin: 0 auto;
+    margin-left: 150px;
+    color: #000;
+    font-size: 30px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+}
+
+/* =====================
+        SECTION
+========================*/
+
+
+.bigmak {
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 90px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    row-gap: 20px;
+}
+
+.block {
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 7px gray;
+    border-bottom: 10px solid #fff;
+    ;
+    border-bottom-color: rgb(0, 47, 255);
+}
+
+.bigmak h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.bigmak i {
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+
+.bigmak .text {
+    margin-top: 70px;
+    color: #000;
+}
+
+.bigmak .view {
+    margin-top: 105px;
+    color: #000;
+    font-weight: 700;
+}
+
+
+/* mine------------------------------- */
+.block {
+    transition: 0.2s all linear;
+}
+
+.block .top {
+    transition: 0.3s all linear;
+}
+
+.block:hover {
+    transform: translate(0, -40px);
+}
+
+@media (max-width:992px) {
+    
+    .bigmak {
+        flex-wrap: wrap !important;
+        justify-content: space-around;
+    }
+    .block{
+        width: 39% !important;
+     
+    }
+    .menu a{
+        margin-right: 10px;
+    }
+    .logo h1{
+        position: relative;
+        right: 120px;
+    }
+}
+@media (max-width:765px) {
+    .menu a{
+        margin: 6px;
+    }
+    .bigmak {
+        flex-wrap: wrap !important;
+      
+    }
+    .block{
+        width: 60% !important;
+     
+    }
+    .logo h1{
+        position: relative;
+        right: 120px;
+    }
+    .icon{
+        position: relative;
+        left: 10px;
+    }
+}
